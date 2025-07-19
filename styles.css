@@ -2,12 +2,27 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Fira Mono', monospace;
   color: white;
   background: linear-gradient(to bottom, #0a0f1a, #000000);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+strong.informatica {
+  color: #4fc3f7; /* Color azul claro */
+  font-weight: bold;
+}
+
+strong.desarrollo-web {
+  color: #ff9800; /* Color naranja */
+  font-weight: bold;
+}
+
+strong.videojuegos {
+  color: #f44336; /* Color rojo */
+  font-weight: bold;
 }
 
 /* Menú de navegación */
@@ -82,7 +97,34 @@ section {
   color: #ddd;
 }
 
+
+.hero-redes {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;  
+}
+
+.hero-redes a {
+  text-decoration: none;
+  color: white;
+  background-color: #1e90ff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* ------------------------------------------------------------ */
+
+
 /* Experiencia */
+#experiencia h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+
 .experiencia-item {
   background-color: rgba(255, 255, 255, 0.05);
   border-left: 4px solid #4fc3f7;
@@ -108,6 +150,8 @@ section {
   line-height: 1.5;
 }
 
+
+
 /*
 ----------------------------------------------------*/
 
@@ -121,8 +165,9 @@ section {
 }
 
 #proyectos h2 {
-  font-size: 2.5rem;
+ font-size: 2.5rem;
   margin-bottom: 40px;
+  color: #ffffff;
 }
 
 /* Contenedor flexible para las cards */
@@ -185,7 +230,7 @@ section {
 }
 
 .card-contenido a:hover {
-  background: #005bb5;
+  color: #4fc3f7;
 }
 
 /* Responsive: en pantallas pequeñas las cards ocupan todo el ancho */
@@ -206,7 +251,6 @@ section {
   background-color: (255, 255, 255, 0.05);
   color: #ffffff; /* texto blanco */
   padding: 60px 20px;
-  font-family: 'Roboto', sans-serif;
   max-width: 900px;
   margin: 0 auto 60px auto;
   border-radius: 12px;
@@ -226,11 +270,13 @@ section {
   text-align: left;
 }
 
-.sobre-mi-texto h2 {
+#sobre-mi h2 {
   font-size: 2.5rem;
   margin-bottom: 25px;
-  color: #ffffff;
+  color: #ffffff; /* título blanco */
 }
+
+
 
 .sobre-mi-texto p {
   line-height: 1.7;
@@ -238,7 +284,7 @@ section {
   white-space: pre-line; /* para respetar saltos de línea en el HTML */
 }
 .sobre-mi-imagen {
-  flex: 1 1 300px;
+  flex: 1 1  80px;
   text-align: center;
 }
 
@@ -268,7 +314,6 @@ footer {
   color: #ffffff;
   text-align: center;
   padding: 15px 0;
-  font-family: 'Roboto', sans-serif;
   font-size: 0.9rem;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
 }
